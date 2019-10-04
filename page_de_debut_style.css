@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    background-color: #19233A;
+    background-image: url(imagesFond.png);
+    background-repeat: no-repeat;
+    background-position:  center right;
+    grid-template-columns: 1fr 1fr 1fr; 
+    background-size:50%;
+    font-family: "duepuntozero";
+}
+
+header{
+    display:flex;
+    background-color: #19233a;
+}
+
+.Contenue{
+    width: 85%; 
+    font-family: "duepuntozero";
+}
+
+p{
+    color: white;  
+}
+
+   
+.rectangle{
+    width:50%;
+    height: 25%;
+    position:absolute;
+    left:25%;
+    top:80%;
+}
+
+p.texte{
+    margin-top: 100%;
+    text-align: center center;
+    font-size: 600%;
+    font-family: duepuntozero;
+}
+
+
+img{
+    width: 100%;
+    margin-top :20%;
+}
+
+.neige {
+    width: 150%;
+    position: absolute;
+    left: -40%;
+    top: 20%;
+
+}
+
+@font-face
+{
+  font-family: "duepuntozero";
+  src: url("Duepuntozero_regular.ttf");
+}

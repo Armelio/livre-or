@@ -1,0 +1,103 @@
+.body
+{
+    display: grid;
+    background-color: #19233A;
+    background-image: url(imagesFond.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    background-size:20%;
+    font-family: "duepuntozero";
+
+  
+   
+  }
+
+.un { 
+ 
+  font-size: 300%;
+  font-family: "duepuntozero";
+  
+  grid-column-start: 2; 
+  grid-column-end: 8; 
+  grid-row-start: 1; 
+  grid-row-end: 1; 
+  background-color: rgba(0, 0, 0, 1%);
+  
+} 
+
+.livre
+{
+  margin-top:0%;
+margin-left:25%;
+width:50%;
+}
+.boutonretour
+{
+height:10%;
+  width:8%;
+  Overflow:hidden;
+} 
+.deux { 
+  grid-column-start: 2; 
+  grid-column-end: 4; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
+  background-color: rgba(0, 0, 0, 1%);
+   
+}
+.trois { 
+  grid-column-start: 2; 
+  grid-column-end: 4;
+  grid-row-start: 4; 
+  grid-row-end: 20; 
+  background-color: rgba(0, 0, 0, 1%);
+  background-repeat: no-repeat;
+  
+
+}
+scroll-container {
+  display: block;
+  width: 750px;
+  height: 700px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
+.fit-picture {
+  height:20px;
+  width:20px;
+}
+
+.fit-picture {
+  height:20px;
+  width:20px;
+}
+.fit-picture {
+  height:20px;
+  width:20px;
+}
+
+
+.newdiv
+{
+  font-family: "duepuntozero";
+  background:#E63C91;
+   color:#fff;  
+  margin: 20px;
+  padding: 5px;
+  position: relative;
+  width:100%
+}
+@font-face
+{
+  font-family: "duepuntozero";
+  src: url("Duepuntozero_regular.ttf");
+}

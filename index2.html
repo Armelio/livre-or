@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="positionning.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body class="body"> 
+    <div class="wrapper">
+
+        <div class="un" style="color:white;"> <a href="index.html"><img class="boutonretour"  src="imagesRetour.png"></a><p class="livre">#livredorsf2019</p> </div>
+        <div class="deux"> 
+            <div class="nested">
+            </div>
+        </div>
+                <div class="trois" id="trois">
+                    <div class="bubblecont" id="bubblecont">
+                    <div class="bubble" id="bubble"></div>
+                    </div>
+                </div>
+                
+    </div> 
+<script>
+
+
+
+    var i=0;
+    var Stok=[""];
+    var tab=[""];
+    var tab2=[""];
+    var x="";
+     var y="";
+     var k="";
+     var a="";
+     var b="";
+     var z="";
+
+     
+     registrer();
+
+    function smile()
+    {
+        document.getElementById('txt').value= document.getElementById('txt').value+"😊";
+        
+    }
+
+
+    function sad()
+    {
+        document.getElementById('txt').value=document.getElementById('txt').value+"🙁";
+        
+    }
+
+
+
+    function Bigsmile()
+    {
+        document.getElementById('txt').value= document.getElementById('txt').value+"😃";    
+    }
+
+    function rafraichir()
+    {
+        document.getElementById('txt3').value='Prénom:';
+        document.getElementById('txt').value='Impressions sur le summer:';
+        document.getElementById('txt2').value="Sur le plan éthique, j'éssayerai de:";
+    }
+
+    function registrer()
+   {  
+    let nouveauMessage = {
+        nomPrenom: '',
+        humeur: '',
+        entreprise: '',
+        avisSF: '',
+        engagement: '',
+    }
+       
+    let divPerles = document.getElementById("bubblecont");
+    let newdiv= document.getElementById("bubble")
+    newdiv.className="newdiv";
+    divPerles.appendChild(newdiv);
+    let areatext = document.createElement("label");     
+    newdiv.appendChild(areatext);
+    areatext.id="txxt";
+    
+    
+    
+   // x=document.getElementById('txt').value;
+    //y=document.getElementById('txt3').value;
+    //k=document.getElementById('txt2').value;
+
+    //let z=y+"<br>"+x+"<br>"+k+"<br>"+"<br>";
+    Stok=localStorage.tableau;
+    //areatext.innerHTML=Stok;
+    tab=JSON.parse(Stok);
+    //Stok=JSON.parse(Stok);
+    //
+    var nouveauMessage1 = Object.create(nouveauMessage);
+
+
+
+for(var i=0;i<tab.length;i++)
+   {
+       nouveauMessage1= tab[i];
+  
+    //y=tab[i].entreprise;
+    //k=tab[i].humeur;
+   // a=tab[i].avisSF;
+   // b=tab[i].engagement;
+ //  x="Nom:"+nouveauMessage1.nomPrenom;
+  // y="Entrprise:"+nouveauMessage1.entreprise;
+  // k="Humeur:"+nouveauMessage1.humeur;
+   //a="Avis sur le summer:"+nouveauMessage1.avisSF;
+   //b="Engagement Ethique:"+nouveauMessage1.engagement;
+
+  
+tab2[i]=nouveauMessage1;
+
+   }
+   tab2=JSON.stringify(tab2);
+   x=/"/g;
+   y=/]/g;
+   z=/2/g;
+  var za=/3/g;
+  var  zb=/1/g;
+   a=/{/g;
+   b=/}/g;
+   var c=/0/g;
+
+
+   var e=/nomPrenom/gi;
+   var t=/avisSF/gi;
+   var r=/entreprise/gi;
+   var p=/engagement/gi;
+   var w=/,/gi;
+
+
+
+   tab2=tab2.replace(x,"  ");
+   tab2=tab2.replace(y,"  ");
+   tab2=tab2.replace(a,"  ");
+   tab2=tab2.replace(b," <br><br> ");
+   tab2=tab2.replace("[","");
+   tab2=tab2.replace(zb,"🙁");
+   tab2=tab2.replace(z,"😊");
+   tab2=tab2.replace(za,"😃");
+   tab2=tab2.replace(c,"😃");
+   tab2=tab2.replace(e,"Nom");
+   tab2=tab2.replace(t," Avis sur le Summer festival");
+   tab2=tab2.replace(r,"Entreprise");
+   tab2=tab2.replace(p,"Engagement");
+   tab2=tab2.replace(w,"  ");
+
+   
+   
+
+   areatext.innerHTML=tab2;
+
+
+    console.log(tab2);
+    console.log(tab.length);
+    
+
+         
+
+    
+   //=document.getElementById('txxt').value+x+'\n';
+         
+   }
+   
+   
+</script>
+</body>
+</html>

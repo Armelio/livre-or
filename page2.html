@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="page1.html">Aller à la page 1</a>
+
+
+    <div id="messages">
+    </div>
+</body>
+<script>    
+
+
+    let tableau = localStorage.getItem("tableau")
+    tableau = JSON.parse(tableau);
+
+    for(let i = 0; i < tableau.length; i++){
+        let titre = document.createElement('h1');
+        titre.innerText = tableau[i].nom;
+        document.getElementById('messages').appendChild(titre);
+    }
+//sole.log(message);
+//
+// 
+
+</script>
+</html>

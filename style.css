@@ -1,0 +1,157 @@
+html
+{
+    height: 100%
+}
+
+body
+{
+    font-family: "font NWS";
+    display: grid;
+    grid-template-columns: 10% 70% 10%;
+    grid-template-rows: 20% 20% 40% 1fr;
+    background-image: url(imagesFond.png);
+    background-color:#19233A;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+}
+
+body div.retour
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+body div.retour img.flecheRetour
+{
+    width: 50%;
+}
+
+body div.containerPseudo
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+
+body div h1.pseudoH1
+{
+    font-family: "font NWS";
+    color: white;
+}
+
+body div input.inputPseudo
+{
+    border: none;
+    margin-bottom: 1%;
+    background-color: #000b25;
+    border-bottom: 1px solid grey;
+    font-family: "font NWS";
+    font-size: 150%;
+    color: white;
+}
+
+body div.containerEntreprise
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+body div h1.entrepriseH1
+{
+    font-family: "font NWS";
+    color: white;
+}
+
+body div input.inputEntreprise
+{
+    border: none;
+    margin-bottom: 1%;
+    background-color: #000b25;
+    border-bottom: 1px solid grey;
+    font-family: "font NWS";
+    font-size: 150%;
+    color: white;
+}
+
+body div.humeurs
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+body div.humeurs h2.txtHumeur
+{
+    text-align: center;
+    font-family: font NWS;
+    color: white;
+}
+
+body div.humeurs div.imgHumeurs
+{
+    text-align: center;   
+}
+
+body div.humeurs img.sad
+{
+    width: 20%;
+}
+
+body div.humeurs img.happy
+{
+    width: 20%;
+}
+
+body div.humeurs img.veryHappy
+{
+    width: 20%;
+}
+
+body div.containerMessage
+{
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    background-image: url(imagesParticule.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body div.containerMessage div.message
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 10%; 
+}
+
+
+body div.containerMessage div.message input
+{
+    border-radius: 25px;
+}
+
+.txt
+{
+    height: 100%;
+    width: 90%;
+    font-family: font NWS;
+}
+
+.engagement
+{
+    font-family: "font NWS";
+    color: white;
+}
+
+body div.containerMessage div.message img.imgEnvoyer
+{
+    width: 5%;
+    height: 10%;
+}
+
+@font-face
+{
+    font-family: "font NWS";
+    src: url("Duepuntozero_regular.ttf");
+}
